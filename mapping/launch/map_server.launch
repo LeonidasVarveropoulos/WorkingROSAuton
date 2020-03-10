@@ -1,0 +1,5 @@
+<launch> 
+  <arg name="map_file" value="/home/team624/2020-LattePandaROS/src/mapping/maps/inf_recharge.yaml" /> <!-- Change file directories for your computer -->
+
+  <node pkg="map_server" type="map_server" name="map_server" args="$(arg map_file)" /> 
+</launch>

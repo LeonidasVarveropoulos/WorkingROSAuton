@@ -1,0 +1,5 @@
+global_frame: map
+rolling_window: true
+
+plugins:
+  - {name: inflation,                 type: "costmap_2d::InflationLayer"}

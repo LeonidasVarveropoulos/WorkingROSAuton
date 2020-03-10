@@ -1,0 +1,15 @@
+<launch>
+
+  <arg name="no_static_map" default="false"/>
+
+  <arg name="base_global_plann default="navfn/NavfnROS"/>
+  <arg name="base_local_planner" default="dwa_local_planner/DWAPlannerROS"/>
+  <!-- <arg name="base_local_planner" default="base_local_planner/TrajectoryPlannerROS"/>
+
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base"
+    <param name="base_global_planue="$(arg base_global_planner)"/>
+    <param name="base_local_planner" value="$(arg base_local_planner)"/>
+    <rosparam file="$(find pathfinding)/params/planner observation sources located in c-->
+
+  <node pkg="pathfinding" type="cmd_vel_to_rpm.py" name="cmd_vel_to_rpm"  output="screen"/>
+</launch>

@@ -1,0 +1,5 @@
+<launch>
+
+  <node pkg="pathfinding" type="cmd_vel_to_rpm.py" name="cmd_vel_to_rpm"  output="screen"/>
+</launch>
+

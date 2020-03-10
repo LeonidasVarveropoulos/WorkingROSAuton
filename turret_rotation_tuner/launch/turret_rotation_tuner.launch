@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="turret_rotation_tuner" type="turret_rotation_tuner.py" name="turret_rotation_tuner"  output="screen"/>
+  <node pkg="turret_rotation_tuner" type="turret_tuner.py" name="turret_tuner"  output="screen"/>
+</launch>
